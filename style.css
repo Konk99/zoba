@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrap {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
