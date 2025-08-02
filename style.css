@@ -109,4 +109,13 @@ footer {
         width: auto;
         text-align: center;
     }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .images > div {
+        margin: 10px 0;
+    }
 }
