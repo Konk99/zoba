@@ -106,7 +106,7 @@ footer {
     }
 
     dialog[open] {
-        width: auto;
+        width: 250px;
         text-align: center;
     }
 
