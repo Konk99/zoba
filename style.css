@@ -101,7 +101,7 @@ h1 {
 section {
     margin: 20px;
     
-    &.product {
+    &.products {
         .images {
             max-width: inherit;
             display: flex;
@@ -117,12 +117,12 @@ section {
 
                 img {
                     cursor: pointer;
-                    transition: 1s;
+                    /* transition: 1s;
 
                     &:hover {
                         rotate: 180deg;
                         zoom: 1.2;
-                    }
+                    } */
                 }
             }
         }
@@ -230,7 +230,7 @@ footer {
         height: 200px;
     }
 
-    section.product .images>div{
+    section.products .images>div{
         margin: 0;
         margin-bottom: 10px;
     }
