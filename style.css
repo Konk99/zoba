@@ -125,9 +125,11 @@ h1 {
     &.firstOne {
         left: 0;
         border-radius: 0px 25px 25px 0px;
+        /* top: 20%; */
 
         &.left {
             left: -200px;
+            top: 8%;
         }
     }
 
@@ -265,9 +267,8 @@ footer {
     }
 
     .main[data-active = false] {
-        margin-left: -100%;
         margin-left: -300%;
-        position: fixed;
+        /* position: fixed; */
     }
 
     .news[data-active = true] {
@@ -275,7 +276,6 @@ footer {
     }
 
     .news[data-active = false] {
-        margin-left: -300%;
         margin-left: -100%;
         /* position: fixed; */
     }
