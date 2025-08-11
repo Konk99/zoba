@@ -18,8 +18,8 @@ const main = document.getElementById('main');
 const news = document.getElementById('news');
 const body = document.body;
 
-main.style.maxHeight = String(window.innerHeight * 0.8) + 'px'
-news.style.maxHeight = String(window.innerHeight * 0.8) + 'px'
+main.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
+news.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
 
 
 if(body.style.width < 450) {

@@ -4,7 +4,45 @@
 }
 
 body {
-    background-color: #989a75;
+    background-color: #53553c;
+    overflow: hidden;
+    position: relative;
+
+    > img {
+        height: 30vw;
+        width: 54vw;
+        position: absolute;
+        z-index: -1;
+        filter: grayscale(80%) opacity(60%);
+        bottom: -40%;
+        
+        &[id = zoba1] {
+            left: -13%;
+            transform: rotateY(180deg);
+        }
+
+        &[id = zoba2] {
+            right: -13%;
+        }
+
+        &[id = flawa1] {
+            width: 30vw;
+            height: 54vw;
+            scale: .5;
+            left: -10%;
+            top: -50%;
+            transform: rotateZ(135deg);
+        }
+
+        &[id = flawa2] {
+            width: 30vw;
+            height: 54vw;
+            scale: .5;
+            right: -10%;
+            top: -50%;
+            transform: rotateZ(-135deg);
+        }
+    }
 }
 
 img {
@@ -12,8 +50,12 @@ img {
     height: 250px;
 }
 
-.name {
+.logo {
     text-align: center;
+    > img {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 .wrap {
@@ -30,7 +72,7 @@ img {
     justify-content: center;
     max-width: 67%;
     flex-wrap: wrap;
-    background-color: aquamarine;
+    background-color: #cf9741;
     text-align: center;
     border: 3px solid black;
     border-radius: 25px;
@@ -38,13 +80,15 @@ img {
     overflow: auto;
     scrollbar-width: none;
     justify-content: center;
+    box-shadow: inset 1rem 1rem 10rem black, 
+                inset -1rem -1rem 10rem black;
 }
 
 .news {
     max-width: 200px;
-    background-color: aquamarine;
+    background-color: #feffed;
     max-height: 600px;
-    border-radius: 25px 0 0 25px;
+    border-radius: 0 25px 25px 0;
     border: 3px solid black;
 
     h1 {
@@ -108,12 +152,14 @@ section {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 20px;
 
             > div {
                 border: 1px solid black;
                 border-radius: 25px;
                 padding: 10px;
                 margin: 10px;
+                background-color: #feffed;
 
                 img {
                     cursor: pointer;
@@ -131,6 +177,7 @@ section {
     &.contact {
         .links {
             margin-top: 20px;
+            margin-bottom: 20px;
 
             a:first-child:hover {
                 i {
@@ -194,6 +241,10 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    body > img {
+        display: none;
+    }
+
     .wrap {
         max-height: 800px;
     }
