@@ -107,6 +107,15 @@ img {
         top: -3%;
         right: -10%;
     }
+
+    div {
+        max-height: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        overflow: auto;
+        scrollbar-width: thin;
+        width: 95%;
+    }
 }
 
 h1 {
@@ -266,6 +275,13 @@ footer {
         width: 125px;
         height: 125px;
     }
+
+    .news div {
+        max-height: 150px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -279,6 +295,7 @@ footer {
 
     .main, .news {
         transition: margin-left 1s;
+        width: 80%;
         max-width: 80%;
         /* overflow: auto; */
     }
@@ -311,10 +328,17 @@ footer {
         max-width: 80%;
         border-radius: 25px;
         text-align: center;
-        height: 200px;
+        height: fit-content;
 
         img {
-            top: -15%;
+            top: -5%;
+        }
+
+        div {
+            max-height: 500px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            overflow: auto;
         }
     }
 

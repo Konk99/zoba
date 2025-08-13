@@ -19,8 +19,13 @@ const news = document.getElementById('news');
 const body = document.body;
 
 function resize() {
-    main.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
-    news.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
+    main.style.maxHeight = String(window.innerHeight * 0.7) + 'px';
+    news.style.maxHeight = String(window.innerHeight * 0.7) + 'px';
+
+    news.querySelector('div').style.maxHeight = String(window.innerHeight * 0.55) + 'px';
+    if(window.innerHeight < 450) {
+        news.querySelector('div').style.maxHeight = String(window.innerHeight * 0.4) + 'px';
+    }
 }
 
 resize();
