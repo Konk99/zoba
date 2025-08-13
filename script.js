@@ -23,8 +23,8 @@ function resize() {
     news.style.maxHeight = String(window.innerHeight * 0.7) + 'px';
 
     news.querySelector('div').style.maxHeight = String(window.innerHeight * 0.55) + 'px';
-    if(window.innerHeight < 450) {
-        news.querySelector('div').style.maxHeight = String(window.innerHeight * 0.4) + 'px';
+    if(window.innerWidth < 1000) {
+        news.querySelector('div').style.maxHeight = String(window.innerHeight * 0.35) + 'px';
     }
 }
 
