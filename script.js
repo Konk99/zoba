@@ -18,9 +18,14 @@ const main = document.getElementById('main');
 const news = document.getElementById('news');
 const body = document.body;
 
-main.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
-news.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
+function resize() {
+    main.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
+    news.style.maxHeight = String(window.innerHeight * 0.7) + 'px'
+}
 
+resize();
+
+window.onresize = resize;
 
 if(body.style.width < 450) {
     buttons[0].addEventListener('click', () => {
