@@ -90,6 +90,7 @@ img {
     max-height: 600px;
     border-radius: 0 25px 25px 0;
     border: 3px solid black;
+    position: relative;
 
     h1 {
         margin-top: 10px;
@@ -97,6 +98,14 @@ img {
 
     h1, p {
         padding: 10px;
+    }
+
+    img {
+        height: auto;
+        width: 30%;
+        position: absolute;
+        top: -3%;
+        right: -10%;
     }
 }
 
@@ -239,6 +248,11 @@ footer {
 
     p {
         display: inline;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 
@@ -254,7 +268,7 @@ footer {
     .main, .news {
         transition: margin-left 1s;
         max-width: 80%;
-        overflow: auto;
+        /* overflow: auto; */
     }
 
     .main {
@@ -286,6 +300,10 @@ footer {
         border-radius: 25px;
         text-align: center;
         height: 200px;
+
+        img {
+            top: -15%;
+        }
     }
 
     section.products .images>div{
